@@ -18,13 +18,13 @@ void main() {
 
 bool isPrime(int number) {
   if (number <= 1) {
-    return false; // เลข 0 และ 1 ไม่เป็นเลขเฉพาะ
+    return false; 
   }
   for (int i = 2; i <= number ~/ 2; i++) {
     if (number % i == 0) {
-      return false; // ถ้าหารลงตัว แสดงว่าไม่เป็นเลขเฉพาะ
+      return false; 
     }
   }
-  return true; // ถ้าไม่หารลงตัวเลย แสดงว่าเป็นเลขเฉพาะ
+  return true; 
 }
 
